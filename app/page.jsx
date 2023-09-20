@@ -8,7 +8,7 @@ const getSnippets = async () => {
     const res = await fetch('http://localhost:3000/api/snippets',{
       cache: "no-cache"
     });
-    
+
     if(res.ok) {
       return await res.json();
     } else {
@@ -31,7 +31,7 @@ export default async function Home() {
       <div className='bg-white text-black lg:w-1/2 lg:m-auto'>
         <div className='bg-gray-200 p-3 flex items-center justify-between'>
           <h1 className='font-extrabold text-xl'>HEXA</h1>
-          <Link href={'/addSnippet'} className='px-3 py-2 bg-black text-white font-bold'>Add Snippet</Link>
+          <Link href={'/AddSnippet'} className='px-3 py-2 bg-black text-white font-bold'>Add Snippet</Link>
         </div>
         <div className=''>
           <ul>

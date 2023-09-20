@@ -5,7 +5,7 @@ import {Toaster } from '../layout';
 import { useRouter } from 'next/navigation';
 
 
-export default function addSnippet() {
+export default function AddSnippet() {
     const {register, handleSubmit, formState: {isValid}} = useForm();
     const router = useRouter();
     const formHandler = function(data) {
